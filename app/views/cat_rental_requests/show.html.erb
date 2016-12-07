@@ -1,0 +1,34 @@
+<h1>Cat Rental Request</h1>
+
+<table>
+  <tr>
+    <td>Cat Name</td>
+    <td><%= @request.cat.name %></td>
+  </tr>
+  <tr>
+    <td>Cat Age</td>
+    <td><%= @request.cat.age %></td>
+  </tr>
+  <tr>
+    <td>Cat Sex</td>
+    <td><%= @request.cat.sex %></td>
+  </tr>
+  <tr>
+    <td>Cat Color</td>
+    <td><%= @request.cat.color %></td>
+  </tr>
+  <tr>
+    <td>Start Date</td>
+    <td><%= @request.start_date %></td>
+  </tr>
+  <tr>
+    <td>End Date</td>
+    <td><%= @request.end_date %></td>
+  </tr>
+  <tr>
+    <td>Status</td>
+    <td><%= @request.status %></td>
+  </tr>
+</table>
+<br><br>
+  <%= link_to "Return to cat list", cats_url %>
